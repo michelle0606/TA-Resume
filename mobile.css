@@ -1,0 +1,119 @@
+@media screen and (max-width: 425px) {
+  body {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 240px 1fr 1fr;
+    grid-template-areas:
+      'sidebar'
+      'about'
+      'experience'
+      'skill';
+  }
+  .sidebar {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 20px 0px;
+  }
+  section {
+    padding: 0px 30px;
+  }
+
+  .photo {
+    margin: auto;
+    width: 150px;
+  }
+
+  .nav > ul {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 100px 100px 100px 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: '. a b c .';
+  }
+
+  .nav {
+    width: 100vw;
+    padding-top: 10px;
+  }
+
+  .nav > ul > li {
+    padding: 0px;
+    font-size: 16px;
+  }
+  .link-about {
+    grid-area: a;
+  }
+  .link-experience {
+    grid-area: b;
+  }
+  .link-reason {
+    grid-area: c;
+  }
+
+  #about {
+    padding-bottom: 30px;
+  }
+  .title {
+    display: flex;
+    flex-flow: column;
+    padding-bottom: 10px;
+  }
+  .title > h1 {
+    text-align: center;
+  }
+
+  .title > p {
+    text-align: center;
+  }
+
+  .icon > ul {
+    justify-content: space-between;
+  }
+  .icon > ul > li {
+    margin-right: 0px;
+  }
+
+  .list {
+    display: block;
+  }
+
+  #experience {
+    padding: 30px;
+  }
+  .indro {
+    font-size: 22px;
+    line-height: 1.5;
+  }
+
+  #reason {
+    grid-area: skill;
+    display: flex;
+    flex-flow: column;
+    padding: 0px 30px;
+  }
+
+  .portfolio {
+    margin-top: 30px;
+    display: flex;
+    flex-flow: column;
+  }
+
+  .restaurant > a > img,
+  .money-keeper > a > img {
+    width: 260px;
+    border-radius: 46px 0px;
+    cursor: pointer;
+  }
+  .restaurant,
+  .money-keeper {
+    background-color: #7c9676;
+    border-radius: 10px;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    margin-right: 0px;
+    margin-bottom: 30px;
+    height: 450px;
+  }
+}
